@@ -20,6 +20,7 @@ $ ansible-galaxy collection install ./pexip/ --upgrade
 ### Ansible
 
 ```yaml
+  # requirements.yml
   collections:
     - name: https://github.com/pexip/pexip-ansible-collections.git
       type: git
