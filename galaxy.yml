@@ -1,14 +1,14 @@
-namespace: "pexip"
-name: "custom"
-version: "1.0.0"
+namespace: pexip
+name: custom
+version: 1.0.0
 readme: README.md
 authors:
   - Even Galland Alander <even.alander@pexip.com>
-description: "Custom modules in use by Pexip"
-license: "Apache-2.0"
+description: Custom modules in use by Pexip
+license: Apache-2.0
 tags:
   - pexip
   - custom
-repository: "https://github.com/pexip/pexip-ansible-collections"
-documentation: "https://github.com/pexip/pexip-ansible-collections/README.md"
+repository: https://github.com/pexip/pexip-ansible-collections
+documentation: https://github.com/pexip/pexip-ansible-collections/README.md
 issues: https://github.com/pexip/pexip-ansible-collections/issues
