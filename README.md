@@ -29,7 +29,7 @@ $ ansible-galaxy collection install ./pexip/ --upgrade
 
 ## Usage
 
-Example fetching secret from GCP secrets manager:
+Example fetching secret file from GCP secrets manager:
 
 ```yaml
 # if need to fetch
@@ -37,4 +37,12 @@ Example fetching secret from GCP secrets manager:
   copy:
     content: "{{ lookup('pexip.custom.gcp_secrets', secret_id, project=gcp_project_id ) }}"
     dest: "/tmp/key.crt"
+```
+
+Example fetching secret variable from GCP secrets manager:
+
+```yaml
+    - name: Set facts(!)
+      set_fact:
+        some_secret: "{{ lookup('pexip.custom.gcp_secrets', secret_id, project=gcp_project_id ) }}"
 ```
